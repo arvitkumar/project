@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Shree Ram Academy of Commerce - Your Gateway to Success in Commerce! Top-notch coaching for CA and CS, available both online and offline." />
+    <title>Shree Ram Academy of Commerce</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- AOS Scroll Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header with Parallax Background and Overlay for Visibility */
+        header {
+            position: relative;
+            background: url('images/header-bg.jpg') center center/cover no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Overlay to boost contrast for header text */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #004080;
+            opacity: 90%;
+            /* Adjust opacity as needed */
+            z-index: 0;
+        }
+
+        /* Ensure header elements stay above the overlay */
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Parallax Section */
+        .parallax {
+            background-image: url('images/parallax-bg.jpg');
+            /* Replace with your desired image */
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+
+
+
+        }
+
+        .parallax-content {
+            text-align: center;
+            padding: 80px 20px;
+            background: #6ab2ff;
+            ;
+            opacity: 90%;
+            color: #fff;
+            width: 85%;
+            border-radius: 30px;
+        }
+
+        main {
+            width: 90%;
+            border-radius: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e6f2ff;
+            border-left: 5px solid #004080;
+        }
+
+        .section.blog {
+            background: #fff;
+            border-left-color: #ff9800;
+        }
+
+        article.blog-post {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #ffe0b2;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        article.blog-post:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        article.blog-post h3 {
+            margin-bottom: 10px;
+        }
+
+        article.blog-post a {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 8px 12px;
+            background: #ff9800;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        article.blog-post a:hover {
+            background: #e68900;
+            transform: translateY(-2px);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            border-color: #004080;
+            outline: none;
+        }
+
+        form button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background: #004080;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        form button:hover {
+            background: #003366;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #004080;
+            color: #fff;
+        }
+
+        /* Responsive design for smaller devices */
+        @media (max-width: 600px) {
+
+            header,
+            main {
+                padding: 10px;
+            }
+
+            form input,
+            form textarea {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with fade-up animation -->
+    <header data-aos="fade-up">
+        <h1>Shree Ram Academy of Commerce</h1>
+        <p>Your Gateway to Success in Commerce!</p>
+    </header>
+
+    <!-- Parallax Section using AOS fade animation -->
+    <section class="parallax" data-aos="fade">
+        <div class="parallax-content">
+            <h2>Experience a New Dimension</h2>
+            <p>Your journey to success begins here.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="section about" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>
+                Shree Ram Academy of Commerce provides coaching for CA and CS courses across India.
+                We offer flexible learning options both online and offline, tailored to meet the needs
+                of aspiring professionals.
+            </p>
+        </section>
+
+        <section class="section blog" data-aos="fade-up">
+            <h2>📝 Latest Blog Posts</h2>
+            <article class="blog-post" data-aos="fade-up">
+                <header>
+                    <h3>📌 How to Prepare for CA Foundation in 3 Months</h3>
+                </header>
+                <p>
+                    Struggling with CA Foundation prep? Here’s a strategic 3-month study plan designed to help you
+                    navigate your preparation with clarity and confidence.
+                </p>
+                <a href="blogs/ca_foundation_tips.html">📖 Read More</a>
+            </article>
+
+            <article class="blog-post" data-aos="fade-up">
+                <header>
+                    <h3>📌 Mastering Company Law for CS Executive</h3>
+                </header>
+                <p>
+                    Company Law can be challenging but manageable. Learn key concepts along with exam strategies to set
+                    you up for success in the CS Executive exam.
+                </p>
+                <a href="blogs/company_law_tips.html">📖 Read More</a>
+            </article>
+
+            <article class="blog-post" data-aos="fade-up">
+                <header>
+                    <h3>📌 How to Manage Time in Professional Exams</h3>
+                </header>
+                <p>
+                    Effective time management is essential for success in CS & CA exams. Discover proven techniques that
+                    can help you maximize your performance.
+                </p>
+                <a href="blogs/time_management.html">📖 Read More</a>
+            </article>
+
+            <article class="blog-post" data-aos="fade-up">
+                <header>
+                    <h3>📌 Common Mistakes Students Make in Taxation</h3>
+                </header>
+                <p>
+                    Avoid common pitfalls in taxation and learn how to improve your exam scores by understanding where
+                    most students go wrong.
+                </p>
+                <a href="blogs/taxation_mistakes.html">📖 Read More</a>
+            </article>
+        </section>
+
+        <section class="section contact" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2025 Shree Ram Academy of Commerce. All rights reserved.</p>
+    </footer>
+
+    <!-- Live Chat Integration -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = "https://embed.tawk.to/YOUR_TAWKTO_ID/default";
+            s1.charset = "UTF-8";
+            s1.setAttribute("crossorigin", "*");
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <!-- AOS Scroll Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
