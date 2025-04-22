@@ -8,22 +8,18 @@
         content="Shree Ram Academy of Commerce - Your Gateway to Success in Commerce! Top-notch coaching for CA and CS, available both online and offline." />
     <title>Shree Ram Academy of Commerce</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <!-- AOS Scroll Animation CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <!-- Include Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-
     <style>
-        /* CSS Reset */
+    
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
         }
-
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -31,7 +27,6 @@
             color: #333;
         }
 
-        /* Header with Parallax Background and Overlay for Visibility */
         header {
             position: relative;
             background: url('images/header-bg.jpg') center center/cover no-repeat;
@@ -40,8 +35,7 @@
             padding: 40px 0;
             text-align: center;
         }
-
-        /* Overlay to boost contrast for header text */
+        
         header::before {
             content: "";
             position: absolute;
@@ -51,11 +45,9 @@
             height: 100%;
             background: #004080;
             opacity: 90%;
-            /* Adjust opacity as needed */
             z-index: 0;
         }
-
-        /* Ensure header elements stay above the overlay */
+     
         header * {
             position: relative;
             z-index: 1;
@@ -70,11 +62,10 @@
         header p {
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
         }
-
-        /* Parallax Section */
+        
         .parallax {
             background-image: url('images/parallax-bg.jpg');
-            /* Replace with your desired image */
+         
             min-height: 300px;
             background-attachment: fixed;
             background-position: center;
@@ -84,16 +75,12 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
-
-
-
         }
 
         .parallax-content {
             text-align: center;
             padding: 80px 20px;
             background: #6ab2ff;
-            ;
             opacity: 90%;
             color: #fff;
             width: 85%;
@@ -209,7 +196,6 @@
             color: #fff;
         }
 
-        /* Responsive design for smaller devices */
         @media (max-width: 600px) {
 
             header,
@@ -226,13 +212,13 @@
 </head>
 
 <body>
-    <!-- Header with fade-up animation -->
+ 
     <header data-aos="fade-up">
         <h1>Shree Ram Academy of Commerce</h1>
         <p>Your Gateway to Success in Commerce!</p>
     </header>
 
-    <!-- Parallax Section using AOS fade animation -->
+
     <section class="parallax" data-aos="fade">
         <div class="parallax-content">
             <h2>Experience a New Dimension</h2>
@@ -317,8 +303,6 @@
     <footer data-aos="fade-up">
         <p>&copy; 2025 Shree Ram Academy of Commerce. All rights reserved.</p>
     </footer>
-
-    <!-- Live Chat Integration -->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
@@ -333,7 +317,6 @@
         })();
     </script>
 
-    <!-- AOS Scroll Animation JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
