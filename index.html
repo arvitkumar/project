@@ -23,6 +23,28 @@
             font-family: 'Roboto', sans-serif;
         }
 
+        .curtain {
+            position: relative;
+            width: 100%px;
+            height: 200px;
+            background-color: #004080;
+            /* deep blue-violet for a dramatic curtain */
+            margin: 20px auto;
+            overflow: hidden;
+            margin-top: 0;
+            opacity: 0.9;
+            /* hide any overflow of the SVG curves */
+        }
+
+        .curtain svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 50px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -71,7 +93,7 @@
             align-items: center;
             justify-content: center;
             gap: 400px;
-        
+
         }
 
         .header-wrapper img {
@@ -79,7 +101,7 @@
             width: 90px;
         }
 
-   
+
         @media (max-width: 600px) {
             .header-wrapper {
                 flex-direction: column;
@@ -118,10 +140,12 @@
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
             opacity: 90%;
             color: #fff;
+            border-bottom: 5px solid #333;
+            /* border-left: solid 5px #333; */
             width: 84.5%;
             font-size: 25px;
             box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.7);
-            border-radius: 30px;
+            border-radius: 150px;
         }
 
         main {
@@ -276,7 +300,27 @@
             </div>
         </div>
     </header>
-    
+    <div class="curtain">
+        <!-- The inline SVG creates 10 curves along the bottom edge -->
+        <svg viewBox="0 0 300 50" preserveAspectRatio="none">
+            <path d="
+            M0,0 
+            Q15,30 30,0
+            Q45,30 60,0
+            Q75,30 90,0
+            Q105,30 120,0
+            Q135,30 150,0
+            Q165,30 180,0
+            Q195,30 210,0
+            Q225,30 240,0
+            Q255,30 270,0
+            Q285,30 300,0
+            L300,50 
+            L0,50 
+            Z" fill="#F5F5F5" />
+        </svg>
+    </div>
+
     <section class="parallax" data-aos="fade">
         <div class="parallax-content">
             <h2>Experience a New Dimension</h2>
